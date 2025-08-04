@@ -29,27 +29,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  openGraph: {
-    title: "Vybhav Achar Bhargav | Founding Engineer",
-    description: "The personal website and resume of Vybhav Achar Bhargav, a founding engineer at Glyf.",
-    url: "https://vybhavab.com",
-    siteName: "Vybhav Achar Bhargav",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Vybhav Achar Bhargav's Personal Website",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
   twitter: {
     card: "summary_large_image",
     title: "Vybhav Achar Bhargav | Founding Engineer",
     description: "The personal website and resume of Vybhav Achar Bhargav, a founding engineer at Glyf.",
-    images: ["/og-image.png"],
+    images: ["/opengraph-image.png"],
   },
 };
 
