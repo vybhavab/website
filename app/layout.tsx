@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
+  metadataBase:
+    process.env.NODE_ENV === "development" ? new URL("localhost:3000") : new URL("https://www.vybhavab.com"),
   title: "vybhavab (Vybhav)",
   description: "The personal website of Vybhav, a founding engineer at Glyf, bringing AI to motion graphics.",
   keywords: [
