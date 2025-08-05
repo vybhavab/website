@@ -2,12 +2,13 @@ import { personalData } from "@/lib/data";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { HelloWorldAnimation } from "@/components/hello-world-animation";
+import { PhotographySection } from "@/components/photography-section";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-background text-foreground min-h-screen">
-      <main className="container mx-auto px-4 py-16 md:py-24">
+    <div className="bg-background text-foreground h-full">
+      <main className="container mx-auto px-4 py-8 md:py-16">
         <section id="hero" className="flex flex-col items-center text-center mb-20 md:mb-28 gap-2">
           <HelloWorldAnimation />
           <h1 className="text-6xl md:text-8xl font-bold mt-4">I'm Vybhav</h1>

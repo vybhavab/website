@@ -1,13 +1,16 @@
-import { Github, Linkedin, Mail, Twitter, Camera } from "lucide-react";
+import { Mail, Camera } from "lucide-react";
+import Github from "@/components/icons/github";
+import Linkedin from "@/components/icons/linkedin";
+import X from "@/components/icons/x";
 
 export const personalData = {
   name: "Vybhav Achar Bhargav",
   tagline: "@vybhavab on the internet",
   socials: [
-    { name: "GitHub", url: "https://github.com/VybhavAB", icon: Github },
-    { name: "LinkedIn", url: "https://linkedin.com/in/VybhavAB", icon: Linkedin },
-    { name: "Email", url: "mailto:VybhavAB@gmail.com", icon: Mail },
-    { name: "Twitter", url: "https://twitter.com/vybhavab", icon: Twitter },
+    { name: "GitHub", url: "https://github.com/vybhavab", icon: Github },
+    { name: "LinkedIn", url: "https://linkedin.com/in/vybhavab", icon: Linkedin },
+    { name: "Email", url: "mailto:vybhavab@gmail.com", icon: Mail },
+    { name: "X", url: "https://x.com/vybhavab", icon: X },
     { name: "Unsplash", url: "https://unsplash.com/@vybhavab", icon: Camera },
   ],
   workExperience: [

@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
+const url = process.env.NODE_ENV === "development" ? new URL("localhost:3000") : new URL("https://www.vybhavab.com");
 export const metadata: Metadata = {
-  metadataBase:
-    process.env.NODE_ENV === "development" ? new URL("localhost:3000") : new URL("https://www.vybhavab.com"),
+  metadataBase: url,
   title: "vybhavab (Vybhav)",
   description: "The personal website of Vybhav, a founding engineer at Glyf, bringing AI to motion graphics.",
   keywords: [
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Vybhav Achar Bhargav", url: "https://vybhavab.com" }],
   creator: "Vybhav Achar Bhargav",
-  icons: {
-    icon: "/favicon.ico",
+  openGraph: {
+    url: url,
+    type: "profile",
   },
   twitter: {
     card: "summary_large_image",
     title: "Vybhav Achar Bhargav | Founding Engineer",
     description: "The personal website and resume of Vybhav Achar Bhargav, a founding engineer at Glyf.",
-    images: ["/opengraph-image.png"],
   },
 };
 
@@ -46,7 +46,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={cn("min-h-screen bg-background font-sans antialiased", inter.variable)}>{children}</body>
+      <body
+        className={cn(
+          "bg-background font-sans antialiased flex flex-col justify-between p-4 md:p-8 min-h-screen",
+          inter.variable,
+        )}
+      >
+        {children}
+        <div className="w-full text-center text-xs text-muted">
+          Copyright ©{new Date().getFullYear()} vybhavab. All rights reserved.
+        </div>
+      </body>
     </html>
   );
 }
