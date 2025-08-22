@@ -46,6 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <script 
+       defer 
+       src="https://assets.onedollarstats.com/stonks.js"
+      ></script>
       <body
         className={cn(
           "bg-background font-sans antialiased flex flex-col justify-between p-4 md:p-8 min-h-screen",
